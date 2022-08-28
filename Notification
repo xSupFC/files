@@ -1,0 +1,12 @@
+local file = {}
+
+function file:Notify(title, desc, logo, count)
+game.StarterGui:SetCore("SendNotification", {
+    Title = title;
+    Text = desc;
+    Logo = logo;
+    Duration = count;
+  })
+end
+
+return file
